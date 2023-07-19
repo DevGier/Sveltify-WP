@@ -9,6 +9,12 @@
 - 🖌️ SASS for creating awesome stylesheets
 - 🏗 TypeScript for ever better programming
 
+## GraphQL API
+
+### Use the GraphQL API to fetch content from WordPress and use it in the theme
+
+(Check the plugin out here)[https://github.com/wp-graphql/wp-graphql]
+
 ## Bootstrap 5
 
 This theme has Bootstrap 5 already integrated into it.

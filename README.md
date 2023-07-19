@@ -2,12 +2,12 @@
 
 ## Features
 
-💡 Built with Svelte for component-based programming
-🛰 Added Routify for advanced routing
-🛠 Bootstrap 5 for elegant theming
-⚡️ Vite for ultra fast compiling
-🖌️ SASS for creating awesome stylesheets
-🏗 TypeScript for ever better programming
+- 💡 Built with Svelte for component-based programming
+- 🛰 Added Routify for advanced routing
+- 🛠 Bootstrap 5 for elegant theming
+- ⚡️ Vite for ultra fast compiling
+- 🖌️ SASS for creating awesome stylesheets
+- 🏗 TypeScript for ever better programming
 
 ## Bootstrap 5
 
@@ -37,7 +37,7 @@ module.exports = {
 };
 ```
 
-### Create a new file for TailwindCSS called index.css, include it in the main.ts and add the folowing:
+### Create a new file for TailwindCSS called index.css, include it in the main.ts and add the following:
 
 ```
 @tailwind base;

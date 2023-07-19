@@ -13,7 +13,7 @@
 
 ### Use the GraphQL API to fetch content from WordPress and use it in the theme
 
-(Check the plugin out here)[https://github.com/wp-graphql/wp-graphql]
+[Check the plugin out here](https://github.com/wp-graphql/wp-graphql)
 
 ## Bootstrap 5
 

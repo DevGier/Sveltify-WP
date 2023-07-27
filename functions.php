@@ -1,7 +1,7 @@
 <?php
 
 /**
- * File loader iwth glob
+ * File loader with glob
  *
  * @param  mixed $dir
  * @return void

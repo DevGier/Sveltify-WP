@@ -2,13 +2,23 @@
   import { Router } from '@roxi/routify'
   import { routes } from '../.routify/routes'
 
-  import { ApolloClient, InMemoryCache } from '@apollo/client/core'
+  import {
+    ApolloClient,
+    InMemoryCache,
+    createHttpLink,
+  } from '@apollo/client/core'
   import { setClient } from 'svelte-apollo'
 
-  const client = new ApolloClient({
-    uri: window.graphql_url,
-    cache: new InMemoryCache(),
+  const link = createHttpLink({
+    uri: '/graphql',
+    credentials: 'same-origin',
   })
+
+  const client = new ApolloClient({
+    cache: new InMemoryCache(),
+    link,
+  })
+
   setClient(client)
 </script>
 

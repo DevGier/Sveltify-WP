@@ -6,14 +6,22 @@
   metatags.title = 'My Svelte WordPress website'
   metatags.description = 'This is an example description'
 
+  const urlParams = new URLSearchParams(window.location.search)
+  const isPreview = urlParams.has('preview') ?? false
+
   const PAGE = gql`
-    query Page {
-      post(id: "/", idType: URI) {
+    query Page($asPreview: Boolean) {
+      post(id: "/", idType: URI, asPreview: $asPreview) {
+        id
         content
+        isPreview
       }
     }
   `
-  const page = query(PAGE)
+
+  const page = query(PAGE, {
+    variables: { isPreview },
+  })
 </script>
 
 <div class="container">
@@ -26,7 +34,7 @@
         Loading...
       {:else if $page.error}
         Error: {$page.error.message}
-      {:else if $page}
+      {:else if $page.data}
         {@html $page.data.post.content}
       {/if}
     </div>

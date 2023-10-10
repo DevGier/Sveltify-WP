@@ -35,7 +35,7 @@ yarn tailwindcss init -p
 
 ```
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{svelte,js,ts,css,sass,scss}"],
   theme: {
     extend: {},
   },

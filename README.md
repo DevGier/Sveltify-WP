@@ -1,4 +1,5 @@
 # Sveltify WordPress starter theme
+This is basicly a headless solution as a theme. Feel free to modify it as much as you like. If you see anything you want to add to this theme feel free to create a pull request.
 
 ## Features
 
